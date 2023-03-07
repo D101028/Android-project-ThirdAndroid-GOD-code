@@ -5,35 +5,88 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:orientation="vertical">
+    tools:orientation="vertical"
+    android:orientation="horizontal">
 
     <LinearLayout
-        android:id="@+id/upperLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000"
-        android:orientation="horizontal">
+        android:background="@color/black"
+        android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/GodCode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="@string/god_code_text"
-            android:textColor="#F4EEEE" />
+        <LinearLayout
+            android:id="@+id/upperLayoutN"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/searchBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#EB0505"
-            android:onClick="open_browser"
-            android:text="@string/search_btn_text"
-            android:textColor="#EAE227" />
+            <TextView
+                android:id="@+id/textViewN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/n"
+                android:textColor="#FFEB3B"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/GodCodeN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/god_code_text"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#F4EEEE"
+                android:textColorHint="#757575" />
+
+            <Button
+                android:id="@+id/searchBtnN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#EB0505"
+                android:onClick="open_browser"
+                android:text="@string/search_btn_text"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/w"
+                android:textColor="#FFEB3B"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/GodCodeW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+        </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
