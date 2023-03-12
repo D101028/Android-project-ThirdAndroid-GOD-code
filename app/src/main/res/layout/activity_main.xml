@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity"
-    tools:orientation="vertical"
-    android:orientation="horizontal">
+    android:background="@color/black"
+    tools:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +42,8 @@
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:textColor="#F4EEEE"
-                android:textColorHint="#757575" />
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize" />
 
             <Button
                 android:id="@+id/searchBtnN"
@@ -51,18 +53,20 @@
                 android:backgroundTint="#EB0505"
                 android:onClick="open_browser"
                 android:text="@string/search_btn_text"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                tools:ignore="VisualLintButtonSize,DuplicateSpeakableTextCheck" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/LinearLayoutW"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="82dp"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
 
             <TextView
                 android:id="@+id/textViewW"
-                android:layout_width="wrap_content"
+                android:layout_width="16dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -75,18 +79,156 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:autofillHints=""
                 android:ems="10"
+                android:hint="@string/god_code_text_w"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:text="Name" />
+                android:textColor="#F4EEEE"
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/searchBtnW"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:backgroundTint="#EB0505"
+                android:onClick="open_browser_w"
+                android:text="@string/search_btn_text"
+                android:textColor="#FFFFFF"
+                tools:ignore="VisualLintButtonSize" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutP"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/textViewP"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/P"
+                android:textColor="#FFEB3B"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/GodCodeP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/god_code_text_P"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#F4EEEE"
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/searchBtnP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#EB0505"
+                android:onClick="open_browser_P"
+                android:text="@string/search_btn_text"
+                android:textColor="#FFFFFF"
+                tools:ignore="VisualLintButtonSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutJ"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/textViewJ"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/J"
+                android:textColor="#FFEB3B"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/GodCodeJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/god_code_text_J"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#F4EEEE"
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/searchBtnJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#EB0505"
+                android:onClick="open_browser_J"
+                android:text="@string/search_btn_text"
+                android:textColor="#FFFFFF"
+                tools:ignore="VisualLintButtonSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/textViewH"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/H"
+                android:textColor="#FFEB3B"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/GodCodeH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/god_code_text_H"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#F4EEEE"
+                android:textColorHint="#757575"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/searchBtnH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#EB0505"
+                android:onClick="open_browser_H"
+                android:text="@string/search_btn_text"
+                android:textColor="#FFFFFF"
+                tools:ignore="VisualLintButtonSize" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

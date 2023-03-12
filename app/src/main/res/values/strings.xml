@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">你渴望力量嗎?</string>
     <string name="god_code_text">ex.174127</string>
+    <string name="god_code_text_w">ex.81625</string>
+    <string name="god_code_text_P">ex.74644169</string>
+    <string name="god_code_text_J">ex.28540</string>
+    <string name="god_code_text_H">ex.38385</string>
     <string name="search_btn_text">Search</string>
     <string name="n">n</string>
     <string name="w">w</string>
+    <string name="P">P</string>
+    <string name="J">J</string>
+    <string name="H">H</string>
 </resources>

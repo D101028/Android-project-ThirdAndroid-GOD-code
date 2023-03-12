@@ -17,9 +17,49 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void open_browser(View view) {
-        EditText inputBlock = (EditText) findViewById(R.id.GodCodeN);
+        EditText inputBlock = findViewById(R.id.GodCodeN);
         String user_input = inputBlock.getText().toString();
         String url = "https://nhentai.net/g/" + user_input + "/";
+        if (user_input.equals("")){
+            url = "https://nhentai.net";
+        }
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
+    }
+    public void open_browser_w(View view) {
+        EditText inputBlock = findViewById(R.id.GodCodeW);
+        String user_input = inputBlock.getText().toString();
+        String url = "https://wnacg.com/photos-index-aid-" + user_input + ".html";
+        if (user_input.equals("")){
+            url = "https://wnacg.com";
+        }
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
+    }
+    public void open_browser_P(View view) {
+        EditText inputBlock = findViewById(R.id.GodCodeP);
+        String user_input = inputBlock.getText().toString();
+        String url = "https://www.pixiv.net/artworks/" + user_input;
+        if (user_input.equals("")){
+            url = "https://www.pixiv.net";
+        }
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
+    }
+    public void open_browser_J(View view) {
+        EditText inputBlock = findViewById(R.id.GodCodeJ);
+        String user_input = inputBlock.getText().toString();
+        String url = "https://18comic.vip" + user_input + "/";
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
+    }
+    public void open_browser_H(View view) {
+        EditText inputBlock = findViewById(R.id.GodCodeH);
+        String user_input = inputBlock.getText().toString();
+        String url = "https://hanime1.me/watch?v=" + user_input;
+        if (user_input.equals("")){
+            url = "https://hanime1.me";
+        }
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(browserIntent);
     }
