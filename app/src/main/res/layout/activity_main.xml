@@ -189,7 +189,7 @@
         <LinearLayout
             android:id="@+id/LinearLayoutH"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="87dp"
             android:orientation="horizontal"
             tools:ignore="ExtraText">
 
@@ -228,6 +228,14 @@
                 android:textColor="#FFFFFF"
                 tools:ignore="VisualLintButtonSize" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonHistory"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:onClick="open_history"
+            android:text="@string/history"
+            android:textColor="#FBF9F9" />
 
     </LinearLayout>
 

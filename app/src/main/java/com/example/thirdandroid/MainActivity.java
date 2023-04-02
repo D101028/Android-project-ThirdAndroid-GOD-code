@@ -63,4 +63,9 @@ public class MainActivity extends AppCompatActivity {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(browserIntent);
     }
+    public void open_history(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, HistoryActivity.class);
+        startActivity(intent);
+    }
 }
