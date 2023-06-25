@@ -48,10 +48,10 @@ public class HistoryActivity extends AppCompatActivity {
     }
     public void test(View view) throws IOException {
         String FILENAME = "test.txt";
-        String string = "hello world!";
-
-        FileOutputStream fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
-        fos.write(string.getBytes());
-        fos.close();
+//        String string = "hello world!";
+//
+//        FileOutputStream fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
+//        fos.write(string.getBytes());
+//        fos.close();
     }
 }

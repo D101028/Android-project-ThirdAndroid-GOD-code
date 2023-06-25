@@ -49,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
     public void open_browser_J(View view) {
         EditText inputBlock = findViewById(R.id.GodCodeJ);
         String user_input = inputBlock.getText().toString();
-        String url = "https://18comic.vip" + user_input + "/";
+        String url = "https://18comic.vip/album/" + user_input + "/";
+        if (user_input.equals("")){
+            url = "https://18comic.vip";
+        }
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(browserIntent);
     }
