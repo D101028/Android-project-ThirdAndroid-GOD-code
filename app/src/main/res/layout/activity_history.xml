@@ -22,6 +22,23 @@
             android:onClick="test"
             android:text="@string/test"
             android:textColor="#FCFBFB" />
+
+        <Button
+            android:id="@+id/button_a"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:onClick="A_click"
+            android:text="A"
+            android:textColor="#F44336"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:onClick="B_click"
+            android:text="B"
+            android:textColor="#CDDC39" />
     </LinearLayout>
 
 </LinearLayout>
